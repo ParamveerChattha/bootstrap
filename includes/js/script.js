@@ -3,8 +3,15 @@
 My Custom JS
 ============
 
-Author:  Brad Hussey
-Updated: August 2013
-Notes:	 Hand coded for Udemy.com
+Author: Param
+Updated: August 2017
+Notes:	 Hand coded for myself.com
 
 */
+$(function(){
+	$('#alertMe').click(function(e){
+
+		e.preventDefault();
+		$('#successAlert').slideDown();
+	});
+});

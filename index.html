@@ -1,45 +1,206 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title></title>
-		<meta name="description" content="">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
-	</head>
-	<body>
-	
-	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
-	
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="includes/css/hockey.css" rel="stylesheet">
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+	<div class="nav navbar-fixed-top">
+		<div class="container">
+			<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+			</button>
+		<!--				<input href="myModal" class ="navbar-brand" type="image" src= "images/hockey.png" /> -->
+	<a class ="navbar-brand"  href="#myModal"><img  src="images/hockey.png" class="img-responsive" alt="Hockey Logo" width="25px" /> </a>
+				<!--Modal Starts -->
+
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+								<h3 class="modal-title"> Hockey Crew </h3>
+							</div> <!--end modal-header -->
+						<div class="modal-body">
+						</div> <!-- end modal-body -->
+					</div><!-- end modal-content -->
+					</div><!-- end modal dialog-->
+				</div> <!--end Modal -->
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">home</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">leagues<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> HIL </a> </li>
+							<li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> EUL </a> </li>
+							<li class="divider"> </li>
+							<li class="dropdown-header"> National Leagues </li>
+							<li> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Bank Leagues </a> </li>
+						</ul> <!--end leagues drop down -->
+					</li>
+				</ul> <!--end nav ul-->
+				<form class="navbar-form pull-left">
+					<input type="text" class="form-control" placeholder="search here" id="searchinput">
+					<button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<!-- end SELF HELP after form-->
+				<ul class="nav navbar-nav pull-right">
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-user"></span> MY Account </a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">IN <img src="images/in.png" class="img-responsive img-circle" width=12em height=12em alt="Indian Flag" /> <strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href"#"> India <img src="images/in.png" class="img-responsive img-circle" width=12em height=12em alt="Indian Flag" /> </a>
+							</li>
+
+							<li class="divider"></li>
+							<li class="dropdown-header">SAARC
+							</li>
+							<li>
+								<a href"#"> Pakistan <img src="images/pk.png" class="img-responsive " width=12em height=12em alt="Indian Flag" /></a>
+							</li>
+						</ul><!--end dropdown menu-->
+
+					</li>
+				</ul>
+			</div> <!--end navbar collapse-->
+		</div><!-- end container -->
+	</div><!-- end nav -->
+<!-- form comment
+	<form class="form-inline">
+		<div class="form-group pull-left">
+			<label class="sr-only" for="emailinput"></label>
+			<input type="email" id="emailinput" class="form-control" placeholder="email" />
+		</div> end --> 
+<!-- form comment
+		<div class="form-group">
+			<label class="sr-only" for="passwordinput"></label>
+			<input type="password" id="passwordinput" class="form-control" placeholder="enter the password" />
+		</div>
+	-->
+	<!-- <div class="form-group"><label class="sr-only" for="addfileinput">attach file </label><input  type="file"
+		placeholder="attach the file"><p type="help-block"> choose and
+		attach the file</p></div> 	
+		<div class="form-group checkbox "><label class="sr-only" for="remember">
+			<input type="checkbox" id="remember" > Remeber me </label></div> end
+			checkbox<button type="submit" class="btn btn-default"> Sign in
+		</button>  form comment<button id="submitbutton"
+		type="submit" class="btn btn-default"><a href="index.html"> submit </a>
+	</button>     </form>  -->
+
+
+	<div  class="carousel slide" id="myCarousel2">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel2" data-slide-to="1"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active" id="slide1myCarousel2">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6"><img src="images/akashdeep.jpg" width="300" height="180" alt="Akashdeep"/>
+						<div class="carousel-caption"> Akashdeep Singh </div> <!-- caption-->
+					</div> <!--end aksah -->
+					<div class="col-sm-3 col-xs-6"><img src="images/Sardar.jpg"  width="300" height="180" alt="Sardar Singh"/>
+						<div class="carousel-caption"> Sardar Singh </div> <!-- caption-->
+					</div>
+					<div class="col-sm-3 col-xs-6"><img src="images/sreejesh.jpg"  width="300" height="180" alt="Sreejesh"/>
+						<div class="carousel-caption">PR Sreejesh</div> <!-- caption-->
+					</div>
+					<div class="col-sm-3 col-xs-6"><img src="images/rupinder.jpg" width="300" height="180" alt="Bob"/>
+						<div class="carousel-caption">Rupinder Pal Singh</div> <!-- caption-->
+					</div>
+
+				</div> <!-- end row -->
+			</div> <!--end item -->
+
+			<!-- Slide -->
+			<div class="item " id="slide2myCarousel2">
+				<div class="row">
+					<div class="col-sm-3 col-xs-6"> <img src="images/Raghu.jpg" width="260" height="180" alt=""/>
+						<div class="carousel-caption">VR Raghunath</div>
+					</div>
+					<div class="col-sm-3 col-xs-6"> <img src="images/ramandeep.jpg" width="260" height="180"alt=""/>
+						<div class="carousel-caption">TRamandeep Singh</div>
+					</div>
+					<div class="col-sm-3 col-xs-6"> <img src="images/Chinglensana.jpg" width="260" height="180"alt=""/>
+						<div class="carousel-caption">Chinglensana Singh</div>
+					</div>
+					<div class="col-sm-3 col-xs-6"> <img src="images/Manpreet.jpg" width="260" height="180"alt=""/>
+						<div class="carousel-caption">Manpreet Singh</div>
+					</div>
+				</div> <!-- end row -->
+			</div> <!-- end item -->
+		</div><!--carousel inner-->
+		<!-- Slide -->
+		<a class="left carousel-control" href="#myCarousel2" data-slide="prev"><span class="icon-prev"></span></a>
+		<a class="right carousel-control" href="#myCarousel2" data-slide="next"><span class="icon-next"></span></a>
+	</div><!-- ended carousel -->
+
+
+
+	<form class="form-inline pull-right">
+		<div class="form-group pull-left">
+			<label class="sr-only" for="emailinput"></label>
+			<input type="email" id="emailinput" class="form-control" placeholder="email" />
+
+			<label class="sr-only" for="passwordinput"></label>
+			<input type="password" id="passwordinput" class="form-control" placeholder="enter the password" />
+		</div>
+
+<!--		<div class="form-group">
+			<label class="sr-only" for="addfileinput">attach file </label>
+			<input  type="file" placeholder="attach the file">
+			<p type="help-block"> choose and attach the file</p>
+		</div> -->
+		<div class=" form-group checkbox ">
+			<label class="sr-only" for="remember"> <input type="checkbox" id="remember" > Remeber me </label>
+		</div> <!--end checkbox-->
+		<!--<button type="submit" class="btn btn-default"> Sign in </button> -->
+		<button id="submitbutton" type="submit" class="btn btn-default"><a href="index.html"> submit </a> </button>
+	</form> <!-- end form-->
+
 
 	<!-- All Javascript at the bottom of the page for faster page loading -->
-		
+
 	<!-- First try for the online version of jQuery-->
 	<script src="http://code.jquery.com/jquery.js"></script>
-	
+
 	<!-- If no online access, fallback to our hardcoded version of jQuery -->
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
+
 	<!-- Bootstrap JS -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
+
 	<!-- Custom JS -->
 	<script src="includes/js/script.js"></script>
-	
-	</body>
-</html>
 
+</body>
+</html>

@@ -13,31 +13,80 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
+   #features{
+      text-align:center;
 
-
-
+   }
+   #features img{
+      margin: 0 0 20px;
+   }
+.featureHeading{
+   padding-top: 10px;
+}
 /* --------------------------------------
    Typography
    -------------------------------------- */
-
-
+body{
+   -webkit-font-smoothing: antialiased;
+   text-rendering:optimizelegibility;
+   padding: 0px 115px;
+}
+.well .page-header{
+   margin-top:0;
+}
+.well .page-header h1{
+   margin-top:0;
+   padding:0px 10px;
+}
 
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-   
-   
-   
+   #searchinput{
+      width:200px;
+   }
+   .navbar-brand{
+      padding: 13px 15px;
+   }
+
+  
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-
-
+      #myCarousel{
+         margin-top:60px;
+      }
+      #myCarousel .item {
+         height:400px;
+         max-width: 100%;
+      }
+      .carousel-caption{
+         font-size:24px;
+      }
+      .carousel-caption h4{
+         font-size:31px;
+      }
+   #slide1{
+      background:url('../../images/carousel_medium_01.jpg') top center no-repeat;
+   }
+   #slide2{
+      background:url('../../images/carousel_medium_02.jpg') top center no-repeat;
+   }
+   #slide3{
+      background:url('../../images/carousel_medium_03.jpg') top center no-repeat;
+   }
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+.alert {
+   margin:10px 30px;
+   display:none;
 
+}
+.well{
+ margin: 20px 10px;
+}
 
 
 /* --------------------------------------
@@ -46,15 +95,39 @@ Notes:	 Hand coded for Udemy.com
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-	
+ 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	
-}
+ #myCarousel .item {
+      height:310px;
+   }
+      #slide1{
+         background:url('../../images/carousel_small_01.jpg') top center no-repeat;
+      }
+      #slide2{
+         background:url('../../images/carousel_small_02.jpg') top center no-repeat;
+      }
+      #slide3{
+         background:url('../../images/carousel_small_03.jpg') top center no-repeat;
+      }
+   }
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	
-}
+
+     #myCarousel .item {
+      height:600px;
+      }
+      #slide1{
+         background:url('../../images/carousel_large_01.jpg') top center no-repeat;
+      }
+      #slide2{
+         background:url('../../images/carousel_large_02.jpg') top center no-repeat;
+      }
+      #slide3{
+         background:url('../../images/carousel_large_03.png') top center no-repeat;
+      }
+   }

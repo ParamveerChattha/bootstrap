@@ -1,0 +1,52 @@
+ 
+   #searchinput{
+      width:200px;
+   }
+   .navbar-brand{
+      padding: 13px 15px;
+   }
+
+
+   #myCarousel{
+      margin-top:100px;
+   }
+   #myCarousel .item {
+      height:200px;
+      padding-left:50px;
+   }
+   .carousel-caption{
+      font-size:18px;
+   }
+   .carousel-caption h4{
+      font-size:31px;
+   }
+    .picture #pic1 {
+      background:url('../../images/akashdeep.jpg') top center no-repeat;
+    }
+      
+   }
+
+
+
+
+   }
+  .navbar-brand{
+      padding: 13px 15px;
+   }
+   .carousel{
+      margin: 0 0 0 0;
+   }
+   #myCarousel .item {
+    height: 180px;
+    padding-left: 50px;
+}
+
+.form-control{
+
+   width:150px;
+}
+.form-group{
+
+   padding-top:10px;
+
+}
