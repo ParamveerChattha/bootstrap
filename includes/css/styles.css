@@ -13,8 +13,13 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
+   #myCarousel2{
+  padding-bottom: 15px
+
+   }
    #features{
       text-align:center;
+      padding-bottom: 40px
 
    }
    #features img{
@@ -131,3 +136,8 @@ body{
          background:url('../../images/carousel_large_03.png') top center no-repeat;
       }
    }
+   footer{
+
+   }
+   /*---------------------
+   -----------------------*/
